@@ -121,12 +121,14 @@ Submit a pull request
 If you find bugs or have suggestions:
 Open a GitHub issue
 Describe the problem & steps to reproduce
+
 ---
 
 ## 📜 License
 
 
 This project is open-source under the MIT License.
+
 ---
 
 ## 🙌 Acknowledgements

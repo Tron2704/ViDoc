@@ -103,6 +103,7 @@ Use preset=veryslow for best compression (smaller file size, longer time).
 ---
 
 ## 🧩 Contributions
+
 Want to improve ViDoc?
 Fork this repo
 Create a new branch (feature-name)
@@ -112,16 +113,19 @@ Submit a pull request
 --- 
 
 ## 📩 Issues & Feedback
+
 If you find bugs or have suggestions:
 Open a GitHub issue
 Describe the problem & steps to reproduce
 ---
 
 ## 📜 License
+
 This project is open-source under the MIT License.
 ---
 
 ## 🙌 Acknowledgements
+
 FFmpeg
 Tkinter
 

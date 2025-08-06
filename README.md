@@ -32,3 +32,113 @@ A modern **FFmpeg GUI tool** built with Python & Tkinter that lets you:
 ### Python dependencies:
 ```bash
 pip install tkinter
+```
+---
+
+##📦 Setup FFmpeg
+Download FFmpeg from: https://www.gyan.dev/ffmpeg/builds/
+
+Extract the ZIP file.
+
+Copy the full path of the bin folder (e.g., C:\ffmpeg\bin)
+
+Add it to your system Environment Variables → Path
+
+Test installation in a terminal:
+```bash
+ffmpeg -version
+ffprobe -version
+If you see version info for both, FFmpeg is correctly installed.
+```
+
+🚀 How to Run ViDoc
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/ViDoc.git
+cd ViDoc
+Run the app:
+
+bash
+Copy
+Edit
+python vidoc.py
+📖 Usage Guide
+Browse for a video file.
+
+Review the detailed media info in the left pane.
+
+Select which streams to keep/remove.
+
+(Optional) For audio streams:
+
+Enable Re-encode audio
+
+Choose codec, channels, and bitrate
+
+Choose:
+
+Output container (MP4/MKV/WebM)
+
+Video codec
+
+Resolution
+
+Bit depth
+
+Encoding preset
+
+Click Convert to start conversion.
+
+Monitor the progress bar & log output.
+
+⚠️ Codec–Container Compatibility
+ViDoc prevents you from choosing invalid codec–container combinations that FFmpeg can’t mux properly, e.g.:
+
+❌ MP4 + VP9/AV1 video codec
+
+❌ WebM + H.264/H.265 video codec
+
+❌ WebM + AC3 audio codec
+
+If you try to use an invalid combination, ViDoc will show an error before starting conversion.
+
+💡 Tips
+For lossless stream copy, set codec to Copy.
+
+MKV container is the most flexible for unusual codec combinations.
+
+For fastest conversion with minimal quality loss, use -c:v copy -c:a copy.
+
+Use preset=ultrafast for fastest encoding speed (larger file size).
+
+Use preset=veryslow for best compression (smaller file size, longer time).
+
+🧩 Contributions
+Want to improve ViDoc?
+
+Fork this repo
+
+Create a new branch (feature-name)
+
+Commit your changes
+
+Submit a pull request
+
+📩 Issues & Feedback
+If you find bugs or have suggestions:
+
+Open a GitHub issue
+
+Describe the problem & steps to reproduce
+
+📜 License
+This project is open-source under the MIT License.
+
+🙌 Acknowledgements
+FFmpeg
+
+Tkinter
+

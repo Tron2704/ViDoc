@@ -44,101 +44,84 @@ Copy the full path of the bin folder (e.g., C:\ffmpeg\bin)
 
 Add it to your system Environment Variables → Path
 
-Test installation in a terminal:
+### Test installation in a terminal:
 ```bash
 ffmpeg -version
 ffprobe -version
 If you see version info for both, FFmpeg is correctly installed.
 ```
+---
 
-🚀 How to Run ViDoc
-Clone the repository:
+## 🚀 How to Run ViDoc
 
-bash
-Copy
-Edit
+### Clone the repository:
+```bash
 git clone https://github.com/your-username/ViDoc.git
 cd ViDoc
-Run the app:
-
-bash
-Copy
-Edit
+```
+### Run the app:
+```bash
 python vidoc.py
-📖 Usage Guide
-Browse for a video file.
+```
+---
 
-Review the detailed media info in the left pane.
+## 📖 Usage Guide
+1. Browse for a video file.
+2. Review the detailed media info in the left pane.
+3. Select which streams to keep/remove.
+4. (Optional) For audio streams:
+- Enable Re-encode audio
+- Choose codec, channels, and bitrate
+5. Choose:
+- Output container (MP4/MKV/WebM)
+- Video codec
+- Resolution
+- Bit depth
+- Encoding preset
+6. Click Convert to start conversion.
+7. Monitor the progress bar & log output.
 
-Select which streams to keep/remove.
+  ---
 
-(Optional) For audio streams:
-
-Enable Re-encode audio
-
-Choose codec, channels, and bitrate
-
-Choose:
-
-Output container (MP4/MKV/WebM)
-
-Video codec
-
-Resolution
-
-Bit depth
-
-Encoding preset
-
-Click Convert to start conversion.
-
-Monitor the progress bar & log output.
-
-⚠️ Codec–Container Compatibility
+## ⚠️ Codec–Container Compatibility
 ViDoc prevents you from choosing invalid codec–container combinations that FFmpeg can’t mux properly, e.g.:
-
 ❌ MP4 + VP9/AV1 video codec
-
 ❌ WebM + H.264/H.265 video codec
-
 ❌ WebM + AC3 audio codec
 
 If you try to use an invalid combination, ViDoc will show an error before starting conversion.
 
-💡 Tips
+---
+
+## 💡 Tips
 For lossless stream copy, set codec to Copy.
-
 MKV container is the most flexible for unusual codec combinations.
-
 For fastest conversion with minimal quality loss, use -c:v copy -c:a copy.
-
 Use preset=ultrafast for fastest encoding speed (larger file size).
-
 Use preset=veryslow for best compression (smaller file size, longer time).
 
-🧩 Contributions
+---
+
+## 🧩 Contributions
 Want to improve ViDoc?
-
 Fork this repo
-
 Create a new branch (feature-name)
-
 Commit your changes
-
 Submit a pull request
 
-📩 Issues & Feedback
+--- 
+
+## 📩 Issues & Feedback
 If you find bugs or have suggestions:
-
 Open a GitHub issue
-
 Describe the problem & steps to reproduce
+---
 
-📜 License
+## 📜 License
 This project is open-source under the MIT License.
+---
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 FFmpeg
-
 Tkinter
 

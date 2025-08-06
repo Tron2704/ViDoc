@@ -27,7 +27,7 @@ A modern **FFmpeg GUI tool** built with Python & Tkinter that lets you:
 ## 🛠 Requirements
 
 - **Python 3.8+**
-- **FFmpeg** (must include `ffmpeg` and `ffprobe` in PATH)
+- **FFmpeg** (must include `ffmpeg` and `ffprobe` in PATH) - download from official website and set the PATH to environment.
 
 ### Python dependencies:
 ```bash

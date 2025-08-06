@@ -119,7 +119,9 @@ Submit a pull request
 ## 📩 Issues & Feedback
 
 If you find bugs or have suggestions:
+
 Open a GitHub issue
+
 Describe the problem & steps to reproduce
 
 ---

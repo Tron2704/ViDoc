@@ -35,7 +35,7 @@ pip install tkinter
 ```
 ---
 
-##📦 Setup FFmpeg
+## 📦 Setup FFmpeg
 Download FFmpeg from: https://www.gyan.dev/ffmpeg/builds/
 
 Extract the ZIP file.
